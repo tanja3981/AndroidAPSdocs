@@ -9,8 +9,8 @@
 * Please update as soon as possible after a new release is available. You will receive an [information on the AndroidAPS home screen](../Installing-AndroidAPS/Releasenotes#release-notes) about the new version.
 * As of version 2.3 you have to use git to update. Updating via zip file does not work anymore.
 * As of version 2.7 repository location changed to [https://github.com/nightscout/AndroidAPS](https://github.com/nightscout/AndroidAPS). If you are not familiar with git the easiest way for update is remove directory with AndroidAPS and do a [new clone](../Installing-AndroidAPS/Building-APK.md).
-* Please use [Android Studio Version 4.1.1](https://developer.android.com/studio/) or newer to build the apk.
-* [Windows 10 32-bit systems](../Installing-AndroidAPS/troubleshooting_androidstudio#unable-to-start-daemon-process) are not supported by Android Studio 4.1.1.
+* Please use **[Android Studio Version 2020.3.1](https://developer.android.com/studio/)** or newer to build the apk.
+* [Windows 10 32-bit systems](../Installing-AndroidAPS/troubleshooting_androidstudio#unable-to-start-daemon-process) are not supported by Android Studio 2020.3.1.
 * If you are using xDrip make sure to [identify the receiver](../Configuration/xdrip#identify-receiver).
 * You can also use Dexcom G6 with the ['Build your own Dexcom App'](../Hardware/DexcomG6.html#if-using-g6-with-build-your-own-dexcom-app).
 
@@ -31,15 +31,26 @@ Follow the manual on the [git installation page](../Installing-AndroidAPS/git-in
 
 ## Update your local copy
 
-* As of version 2.7 repository location changed to [https://github.com/nightscout/AndroidAPS](https://github.com/nightscout/AndroidAPS). If you are not familiar with git the easiest way for update is remove directory with AndroidAPS and do a [new clone](../Installing-AndroidAPS/Building-APK.md).
-* Click: VCS -> Git -> Pull
+* As of version 2.7 repository location changed to [https://github.com/nightscout/AndroidAPS](https://github.com/nightscout/AndroidAPS). If you are not familiar with git the easiest way for update is remove directory with AndroidAPS on your disk and follow the instructions to do a [New clone](../Installing-AndroidAPS/Building-APK.md).
+If you have already changed the URL or update from version 2.8.x, follow these steps:
 
-   ![Android Studio - GIT - Pull](../images/AndroidStudio361_Update01.png)
+* Open your existing AndroidAPS project with Android Studio. You might need to select your project. (Double) click on the AndroidAPS project.
+  ![Android Studio - Select Project](../images/update/01_ProjectSelection.png)
 
-* Click Pull (no changes in dialog field)
+* In the menu bar of Android Studio, select Git -> Fetch
 
-   ![Android Studio - GIT - Pull 2](../images/AndroidStudio361_Update02a.png)
+   ![Android Studio Menu - Git - Fetch](../images/update/02_GitFetch.png)
+
+* You will see a message in the lower right corner that Fetch was successful.
+
+   ![Android Studio Menu - Git - Fetch successful](../images/update/03_GitFetchSuccessful.png)
+
+* In the menu bar, now select Git -> Pull
+
+   ![Android Studio Menu - Git - Pull](../images/update/04_GitPull.png)  
    
+   ![Android Studio - GIT - Pull 2](../images/AndroidStudio361_Update02a.png)
+
 * Wait while download is in progress.
 
    ![Android Studio - Pull in progress](../images/AndroidStudio361_Update03.png)
@@ -67,7 +78,7 @@ Follow the manual on the [git installation page](../Installing-AndroidAPS/git-in
 
 ![Key store](../images/AndroidStudio361_Update05.png)
 
-* Select build variant "fullRelease" (1.). 
+* Select build variant "fullRelease" (1.).
 * Check boxes V1 and V2 for signature versions (2.).
 * Click "Finish". (3.)
 
