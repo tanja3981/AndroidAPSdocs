@@ -48,67 +48,28 @@ If you have already changed the URL or update from version 2.8.x, follow these s
 * In the menu bar, now select Git -> Pull
 
    ![Android Studio Menu - Git - Pull](../images/update/04_GitPull.png)  
-   
-   ![Android Studio - GIT - Pull 2](../images/AndroidStudio361_Update02a.png)
 
-* Wait while download is in progress.
+* Leave all options as they are (origin/master) and select Pull
 
-   ![Android Studio - Pull in progress](../images/AndroidStudio361_Update03.png)
+   ![Android Studio - Git - Pull dialog](../images/update/05_GitPullOptions.png)
 
-* When done Android Studio will inform you that "all files are up-to-date".
+* Wait while download is in progress, you will see this as info in the bottom bar. When it's done, you will see a success message.
+Note: The files that were updated may vary! This is not an indication
 
-   ![All files up to date](../images/AndroidStudio361_Update04.png)
+   ![Android Studio - Pull successful](../images/update/06_GitPullSuccess.png)
 
+* Gradle Sync will be running a couple of seconds do download some dependencies. Wait until it is finished.
 
-## Generate signed APK
-<!--- Text is maintained in page building-apk.md --->
-* Click "Build" in the menu bar and select "Generate Signed Bundle / APK...".
+  ![Android Studio - Gradle Sync](../images/studioSetup/40_BackgroundTasks.png)
 
-![Build apk](../images/AndroidStudio361_27.png)
-
-* Select "APK" (1.) instead of "Android App Bundle" and click "Next" (2.).
-
-![APK instead of bundle](../images/AndroidStudio361_28.png)
-
-* Make sure that module is set to "app".
-* Select your key store path by clicking on "Choose existing...".
-* Enter your passwords for key store and key.
-* If the box to remember passwords is checked you don't have to enter them. In case the box was not checked during last build and you cannot remember the passwords refer to the [troubleshooting section](../Installing-AndroidAPS/troubleshooting_androidstudio#lost-keystore).
-* Click "Next".
-
-![Key store](../images/AndroidStudio361_Update05.png)
-
-* Select build variant "fullRelease" (1.).
-* Check boxes V1 and V2 for signature versions (2.).
-* Click "Finish". (3.)
-
-![Finish build](../images/AndroidStudio361_32.png)
-
-* Android Studio will display the information "APK(s) generated successfully..." after build is finished.
-* In case build was not successful refer to the [troubleshooting section](../Installing-AndroidAPS/troubleshooting_androidstudio.rst).
-* Easiest way to find the apk is to click on "Event log".
-
-![Build successfully - event log](../images/AndroidStudio361_33.png)
-
-* In the event log section click "locate".
-
-![Event log - locate apk](../images/AndroidStudio361_34.png)
-
-* app-full-release.apk is the file you are looking for.
-
-![File location apk](../images/AndroidStudio361_35.png)
-
-
-## Transfer APK to smartphone
-
-Easiest way to transfer app-full-release.apk to your phone is via [USB cable or Google Drive](https://support.google.com/android/answer/9064445?hl=en). Please note that transfer by mail might cause difficulties and is not the preferred way.
-
-On your phone you have to allow installation from unknown sources. Manuals how to do this can be found on the internet (i.e. [here](https://www.expressvpn.com/de/support/vpn-setup/enable-apk-installs-android/) or [here](https://www.androidcentral.com/unknown-sources)).
+* Your sourcecode is not the current released version.
+It's time to build the signed apk from it.
+[Build signed apk section](../Installing-AndroidAPS/Building-APK.html#generate-signed-apk)
 
 
 ## Check AAPS version on phone
 
-You can check the AAPS version on your phone by clicking the three dots menu on the top right and then about.
+After you installed the new apk, you can check the AAPS version on your phone by clicking the three dots menu on the top right and then About.
 
 ![AAPS version installed](../images/Update_VersionCheck.png)
 
