@@ -62,7 +62,7 @@ Note: The files that were updated may vary! This is not an indication
 
   ![Android Studio - Gradle Sync](../images/studioSetup/40_BackgroundTasks.png)
 
-* Your sourcecode is not the current released version.
+* Your sourcecode is now the current released version.
 It's time to build the signed apk from it.
 [Build signed apk section](../Installing-AndroidAPS/Building-APK.html#generate-signed-apk)
 
