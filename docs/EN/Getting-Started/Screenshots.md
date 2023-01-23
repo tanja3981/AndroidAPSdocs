@@ -9,7 +9,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 ### Section A - Tabs
 * Navigate between the various AndroidAPS modules.
 * Alternatively you can change screens by swiping left or right.
-* Displayed tabs can be selected in [config builder](../Configuration/Config-Builder#tab-or-hamburger-menu).
+* Displayed tabs can be selected in [config builder](../Configuration/Config-Builder.html#tab-or-hamburger-menu).
 
 ### Section B - Profile & target
 
@@ -19,7 +19,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 
 * Current profile is displayed in the left bar.
 * Short press profile bar to view profile details
-* Long press profile bar to [switch between different profiles](../Usage/Profiles#profile-switch).
+* Long press profile bar to [switch between different profiles](../Usage/Profiles.html#profile-switch).
 * If profile switch was made with duration remaining time in minutes is shown in brackets.
 
 #### Target
@@ -27,7 +27,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 ![Temp target remaining duration](../images/Home2020_TT.png)
 
 * Current target blood glucose level is displayed in the right bar.
-* Short press target bar to set a [temporary target](../Usage/temptarget.md).
+* Short press target bar to set a [temporary target](../Usage/temptarget.html).
 * If temp target is set bar turns yellow and remaining time in minutes is shown in brackets.
 
 
@@ -37,7 +37,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 ![Visualization of dynamic target adjustment](../images/Home2020_DynamicTargetAdjustment.png)
 
 * AAPS can dynamically adjust your target based on sensitivity if you are using SMB algorithm.
-* Enable either one or both of the [following options](../Configuration/Preferences#openaps-smb-settings)
+* Enable either one or both of the [following options](../Configuration/Preferences.html#openaps-smb-settings)
    * "sensitivity raises target" and/or 
    * "resistance lowers target" 
 * If AAPS detects resistance or sensitivity the target will change from what is set from profile. 
@@ -47,7 +47,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 
 #### Current blood glucose
 * Latest blood glucose reading from your CGM is shown on the left side.
-* Color of the BG value reflects the status to the defined [range](../Configuration/Preferences#range-for-visualization).
+* Color of the BG value reflects the status to the defined [range](../Configuration/Preferences.html#range-for-visualization).
    * green = in range
    * red = below range
    * yellow = above range
@@ -59,7 +59,7 @@ This is the first screen you will come across when you open AndroidAPS and it co
 
 * A new icon shows loop status:
    * green circle = loop running
-   * green circle with dotted line = [low glucose suspend (LGS)](../Usage/Objectives#objective-6-starting-to-close-the-loop-with-low-glucose-suspend)
+   * green circle with dotted line = [low glucose suspend (LGS)](../Usage/Objectives.html#objective-6-starting-to-close-the-loop-with-low-glucose-suspend)
    * red circled = loop disabled (not working permanently)
    * yellow circle = loop suspended (temporarily paused but basal insulin will be given) - remaining time is shown below icon
    * grey circle = pump disconnected (temporarily no insulin dosage at all) - remaining time is shown below icon
@@ -82,9 +82,9 @@ Up to 30h hours are taken into accord for AAPS calculations. So even after you s
 To remove it immediately you need to manually delete a couple of entries from the Dexcom/xDrip+ tab.
 
 However, when there are a lot of duplicates, it might be easier to
-* [backup your settings](../Usage/ExportImportSettings.md),
+* [backup your settings](../Usage/ExportImportSettings.html),
 * reset your database in the maintenance menu and
-* [import your settings](../Usage/ExportImportSettings.md) again
+* [import your settings](../Usage/ExportImportSettings.html) again
 
 ##### Red warning sign: Duplicate BG data
 
@@ -121,11 +121,11 @@ You need to find out why you get duplicate BGs:
    * IOB may be negative if there have recently been periods of reduced basal.
    * Press the icon to see the split of bolus and basal insulin
    
-* Grain: [carbs on board (COB)](../Usage/COB-calculation.md) - yet unabsorbed carbs you have eaten before
+* Grain: [carbs on board (COB)](../Usage/COB-calculation.html) - yet unabsorbed carbs you have eaten before
   -> icon pulses if carbs are required 
 * Purple line: basal rate - icon changes reflecting temporary changes in basal rate (flat at 100%)
    * Press the icon to see the base basal rate and details of any temp basal (including remaining duration)
-* Arrows up & down: indicating actual [autosens](../Usage/Open-APS-features#autosens) status (enabled or disabled) and value is shown below icon
+* Arrows up & down: indicating actual [autosens](../Usage/Open-APS-features.html#autosens) status (enabled or disabled) and value is shown below icon
 
 #### Carbs required
 ![Carbs required](../images/Home2020_CarbsRequired.png)
@@ -146,7 +146,7 @@ You need to find out why you get duplicate BGs:
    * Battery age and level (%)
 * If threshold warning is exceeded, values will be shown in yellow.
 * If threshold critical is exceeded, values will be shown in red.
-* Settings can be made in [preferences](../Configuration/Preferences#status-lights).
+* Settings can be made in [preferences](../Configuration/Preferences.html#status-lights).
 
 ### Section F - Main graph
 
@@ -155,8 +155,8 @@ You need to find out why you get duplicate BGs:
 * Graph shows your blood glucose (BG) as read from your glucose monitor (CGM). 
 * Notes entered in action tab such as fingerstick calibrations and carbs entries as well as profile switches are shown here. 
 * Long press on the graph to change the time scale. You can choose 6, 12, 18 or 24 hours.
-* The green area reflects your target range. It can be configured in [preferences](../Configuration/Preferences#range-for-visualization).
-* Blue triangles show [SMB](../Usage/Open-APS-features#super-micro-bolus-smb) - if enabled in [preferences](../Configuration/Preferences#openaps-smb-settings).
+* The green area reflects your target range. It can be configured in [preferences](../Configuration/Preferences.html#range-for-visualization).
+* Blue triangles show [SMB](../Usage/Open-APS-features.html#super-micro-bolus-smb) - if enabled in [preferences](../Configuration/Preferences.html#openaps-smb-settings).
 * Optional information:
   
    * Predictions
@@ -171,7 +171,7 @@ You need to find out why you get duplicate BGs:
 
 #### Prediction lines
 
-* **Orange** line: [COB](../Usage/COB-calculation.md) (colour is used generally to represent COB and carbs)
+* **Orange** line: [COB](../Usage/COB-calculation.html) (colour is used generally to represent COB and carbs)
 
    Prediction line shows where your BG (not where COB itself!) will go based on the current pump settings and assuming that the deviations due carb absorption remain constant. This line only appears if there are known COB.
 
@@ -185,20 +185,20 @@ You need to find out why you get duplicate BGs:
 
    Prediction line shows how the IOB trajectory line would change if the pump stopped all insulin delivery (0% TBR).
 
-   *This line appears only when the [SMB](../Configuration/Preferences#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
+   *This line appears only when the [SMB](../Configuration/Preferences.html#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
 
 
-* **Dark yellow** line: [UAM](../Configuration/Sensitivity-detection-and-COB#sensitivity-oref1) (un-announced meals)
+* **Dark yellow** line: [UAM](../Configuration/Sensitivity-detection-and-COB.html#sensitivity-oref1) (un-announced meals)
 
   Unannounced meals means that a significant increase in glucose levels due to meals, adrenaline or other influences is detected. Prediction line is similar to the ORANGE COB line but it assumes that the deviations will taper down at a constant rate (by extending the current rate of reduction).
 
-   *This line appears only when the [SMB](../Configuration/Preferences#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
+   *This line appears only when the [SMB](../Configuration/Preferences.html#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
 
 * **Dark orange** line: aCOB (accelerated carbohydrate absorption)
 
    Similar to COB, but assuming a static 10 mg/dL/5m (-0.555 mmol/l/5m) carb absorption rate. Deprecated and of limited usefulness.
 
-   *This line appears only when the older [AMA](../Configuration/Preferences#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
+   *This line appears only when the older [AMA](../Configuration/Preferences.html#advanced-meal-assist-ama-or-super-micro-bolus-smb) algorithm is used.*
 
 
 Usually your real glucose curve ends up in the middle of these lines, or close to the one which makes assumptions that closest resemble your situation.
@@ -218,7 +218,7 @@ Usually your real glucose curve ends up in the middle of these lines, or close t
 ### Section G - additional graphs
 
 * You can activate up to four additional graphs below the main graph.
-* To open settings for additional graphs click the triangle on the right side of the [main graph](../Getting-Started/Screenshots#section-f-main-graph) and scroll down.
+* To open settings for additional graphs click the triangle on the right side of the [main graph](../Getting-Started/Screenshots.html#section-f-main-graph) and scroll down.
 
 ![Additional graph settings](../images/Home2020_AdditionalGraphSetting.png)
 
@@ -229,9 +229,9 @@ Usually your real glucose curve ends up in the middle of these lines, or close t
 
 #### Insulin on board
 * Shows the insulin you have on board (= active insulin in your body). It includes insulin from bolus and temporary basal (**but excludes basal rates set in your profile**).
-* If there were no [SMBs](../Usage/Open-APS-features#super-micro-bolus-smb), no boluses and no TBR during DIA time this would be zero.
+* If there were no [SMBs](../Usage/Open-APS-features.html#super-micro-bolus-smb), no boluses and no TBR during DIA time this would be zero.
 * IOB can be negative if you have no remaining bolus and zero/low temp for a longer time.
-* Decaying depends on your [DIA and insulin profile settings](../Configuration/Config-Builder#local-profile). 
+* Decaying depends on your [DIA and insulin profile settings](../Configuration/Config-Builder.html#local-profile). 
 
 #### Carbs On Board
 * Shows the carbs you have on board (= active, not yet decayed carbs in your body). 
@@ -246,7 +246,7 @@ Usually your real glucose curve ends up in the middle of these lines, or close t
 * **BLACK** bars show small deviations not taken into account for sensitivity
 
 #### Sensitivity
-* Shows the sensitivity that [Autosens](../Usage/Open-APS-features#autosens) has detected. 
+* Shows the sensitivity that [Autosens](../Usage/Open-APS-features.html#autosens) has detected. 
 * Sensitivity is a calculation of sensitivity to insulin as a result of exercise, hormones etc.
 
 #### Activity
@@ -265,14 +265,14 @@ Usually your real glucose curve ends up in the middle of these lines, or close t
 
    * If connection to pump is lost, the insulin button will not be visible.
 
-* Other Buttons have to be setup in [preferences](../Configuration/Preferences#buttons).
+* Other Buttons have to be setup in [preferences](../Configuration/Preferences.html#buttons).
 
 #### Insulin
 
 ![Insulin button](../images/Home2020_ButtonInsulin.png)
 
 * To give a certain amount of insulin without using [bolus calculator](#bolus-wizard).
-* By checking the box you can automatically start your [eating soon temp target](../Configuration/Preferences#default-temp-targets).
+* By checking the box you can automatically start your [eating soon temp target](../Configuration/Preferences.html#default-temp-targets).
 * If you do not want to bolus through pump but record insulin amount (i.e. insulin given by syringe) check the corresponding box.
 
 #### Carbs
@@ -280,27 +280,27 @@ Usually your real glucose curve ends up in the middle of these lines, or close t
 ![Carbs button](../images/Home2020_ButtonCarbs.png)
 
 * To record carbs without bolusing.
-* Certain [pre-set temporary targets](../Configuration/Preferences#default-temp-targets) can be set directly by checking the box.
+* Certain [pre-set temporary targets](../Configuration/Preferences.html#default-temp-targets) can be set directly by checking the box.
 * Time offset: When will you / have you been eaten carbs (in minutes).
-* Duration: To be used for ["extended carbs"](../Usage/Extended-Carbs.md)
+* Duration: To be used for ["extended carbs"](../Usage/Extended-Carbs.html)
 * You can use the buttons to quickly increase carb amount.
-* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences#nsclient).
+* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences.html#nsclient).
 
 #### Calculator
 * See Bolus Wizard [section below](#bolus-wizard)
 
 #### Calibrations
 * Sends a calibration to xDrip+ or opens Dexcom calibration dialogue.
-* Must be activated in [preferences](../Configuration/Preferences#buttons).
+* Must be activated in [preferences](../Configuration/Preferences.html#buttons).
 
 #### CGM
 * Opens xDrip+.
 * Back button returns to AAPS.
-* Must be activated in [preferences](../Configuration/Preferences#buttons).
+* Must be activated in [preferences](../Configuration/Preferences.html#buttons).
 
 #### Quick Wizard
 * Easily enter amount of carbs and set calculation basics.
-* Details are setup in [preferences](../Configuration/Preferences#quick-wizard).
+* Details are setup in [preferences](../Configuration/Preferences.html#quick-wizard).
 
 ## Bolus Wizard
 
@@ -327,7 +327,7 @@ When you want to make a meal bolus this is where you will normally make it from.
 ### Section K
 * Shows the calculated bolus. 
 * If the amount of insulin on board already exceeds the calculated bolus then it will just display the amount of carbs still required.
-* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences#nsclient).
+* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences.html#nsclient).
 
 ### Section L
 * Details of wizard's bolus calculation.
@@ -346,7 +346,7 @@ When you want to make a meal bolus this is where you will normally make it from.
 
 * If you see the warning above after using bolus wizard, AndroidAPS has detected that the calculated COB value maybe wrong. 
 * So, if you want to bolus again after a previous meal with COB you should be aware of overdosing! 
-* For details see the hints on [COB calculation page](../Usage/COB-calculation#detection-of-wrong-cob-values).
+* For details see the hints on [COB calculation page](../Usage/COB-calculation.html#detection-of-wrong-cob-values).
 
 ## Action tab
 
@@ -356,11 +356,11 @@ When you want to make a meal bolus this is where you will normally make it from.
 * Button [profile switch](../Usage/Profiles#profile-switch) as an alternative to pressing the [current profile](../Getting-Started/Screenshots.md#section-b-profile-target) on homescreen.
 * Button [temporary target](../Usage/temptarget#temp-targets) as an alternative to pressing the [current target](../Getting-Started/Screenshots.md#section-b-profile-target) on homescreen.
 * Button to start or cancel a temporary basal rate. Please note that the button changes from “TEMPBASAL” to “CANCEL x%” when a temporary basal rate is set.
-* Even though [extended boluses](../Usage/Extended-Carbs#extended boluses) do not really work in a closed loop environment some people were asking for an option to use extended bolus anyway. 
+* Even though [extended boluses](../Usage/Extended-Carbs.html#extended boluses) do not really work in a closed loop environment some people were asking for an option to use extended bolus anyway. 
 
    * This option is only available for Dana RS and Insight pumps. 
    * Closed loop will automatically be stopped and switched to open loop mode for the time running extended bolus.
-   * Make sure to read the [details](../Usage/Extended-Carbs#extended boluses) before using this option.
+   * Make sure to read the [details](../Usage/Extended-Carbs.html#extended boluses) before using this option.
 
 ### Careportal - section N
 
@@ -371,12 +371,12 @@ When you want to make a meal bolus this is where you will normally make it from.
    * cannula age
    * pump battery age & level (percentage
    
-* Less information will be shown if [low resolution skin](../Configuration/Preferences#skin) is used.
+* Less information will be shown if [low resolution skin](../Configuration/Preferences.html#skin) is used.
 
 #### Sensor level (battery)
 * Needs xDrip+ nightly build Dec. 10, 2020 or newer.
 * Works for CGM with additional transmitter such as MiaoMiao 2. (Technically sensor has to send cat level  information to xDrip+.)
-* Thresholds can be set in [preferences](../Configuration/Preferences#status-lights).
+* Thresholds can be set in [preferences](../Configuration/Preferences.html#status-lights).
 * If sensor level is the same as phone battery level you xDrip+ version is probably too old and needs an update.
 
    ![Sensor levels equals phone battery level](../images/Home2021_ActionSensorBat.png)
@@ -421,7 +421,7 @@ And even more at: [Exponential Insulin Curves + Fiasp](https://seemycgm.com/2017
 ![Pump Status](../images/Screenshot_PumpStatus.png)
 
 * Different information on pump status. Displayed information depends on your pump model.
-* See [pumps page](../Hardware/pumps.md) for details.
+* See [pumps page](../Hardware/pumps.html) for details.
 
 ## Care Portal
 
@@ -430,7 +430,7 @@ Careportal replicated the functions you will find on your Nightscout screen unde
 ### Review carb calculation
 ![Review carb calculation on treatment tab](../images/Screenshots_TreatCalc.png)
 
-* If you have used the [Bolus Wizard](../Getting-Started/Screenshots#bolus-wizard) to calculate insulin dosage you can review this calculation later on treatments tab.
+* If you have used the [Bolus Wizard](../Getting-Started/Screenshots.html#bolus-wizard) to calculate insulin dosage you can review this calculation later on treatments tab.
 * Just press the green Calc link. (Depending on pump used insulin and carbs can also be shown in one single line in treatments.)
 
 ### Carb correction
@@ -452,7 +452,7 @@ Treatment tab can be used to correct faulty carb entries (i.e. you over- or unde
 ## Loop, AMA / SMB
 * These tabs show details about the algorithm's calculations and why AAPS acts the way it does.
 * Calculations are each time the system gets a fresh reading from the CGM.
-* For more details see [APS section on config builder page](../Configuration/Config-Builder#aps).
+* For more details see [APS section on config builder page](../Configuration/Config-Builder.html#aps).
 
 ## Profile
 ![Profile](../images/Screenshots_Profile.png)
@@ -465,18 +465,18 @@ Treatment tab can be used to correct faulty carb entries (i.e. you over- or unde
    * Basal rate
    * Target: Blood glucose level that you want AAPS to be aiming for
 
-* As of version 3.0 only [local profile](../Configuration/Config-Builder#local-profile) is possible. The local profile can be edited on your smartphone and synced to your Nightscout site.
+* As of version 3.0 only [local profile](../Configuration/Config-Builder.html#local-profile) is possible. The local profile can be edited on your smartphone and synced to your Nightscout site.
 
 ## Treatment
 
 History of the following treatments:
 
-* Bolus & carbs -> option to [remove entries](../Getting-Started/Screenshots#carb-correction) to correct history
-* [Extended bolus](../Usage/Extended-Carbs#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only)
+* Bolus & carbs -> option to [remove entries](../Getting-Started/Screenshots.html#carb-correction) to correct history
+* [Extended bolus](../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only)
 * Temporary basal rate
-* [Temporary target](../Usage/temptarget.md)
-* [Profile switch](../Usage/Profiles.md)
-* [Careportal](../Usage/CPbefore26#careportal-discontinued) - notes entered through action tab and notes in dialogues
+* [Temporary target](../Usage/temptarget.html)
+* [Profile switch](../Usage/Profiles.html)
+* [Careportal](../Usage/CPbefore26.html#careportal-discontinued) - notes entered through action tab and notes in dialogues
 
 ## BG Source - xDrip+, BYODA...
 ![BG Source tab - here xDrip](../images/Screenshots_BGSource.png)
@@ -488,5 +488,5 @@ History of the following treatments:
 ![NSClient](../images/Screenshots_NSClient.png)
 
 * Displays status of the connection with your Nightscout site.
-* Settings are made in [preferences](../Configuration/Preferences#nsclient). You can open the corresponding section by clicking the cog wheel on the top right side of the screen.
-* For troubleshooting see this [page](../Usage/Troubleshooting-NSClient.md).
+* Settings are made in [preferences](../Configuration/Preferences.html#nsclient). You can open the corresponding section by clicking the cog wheel on the top right side of the screen.
+* For troubleshooting see this [page](../Usage/Troubleshooting-NSClient.html).
